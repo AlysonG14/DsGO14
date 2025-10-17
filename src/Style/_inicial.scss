@@ -1,4 +1,5 @@
 @use './variaveis' as *;
+
 .inicial {
     display: flex;
     flex-direction: column;
@@ -6,10 +7,7 @@
     justify-content: center;
     height: 100vh;
     gap: 20px;
-
-    .logo {
-        height: 80%;
-    }
+    background-color: #031120;
 
     .entrar {
         background: $botao-azul;
@@ -26,12 +24,12 @@
 
         &:hover {
             transform: scale(1.05);
-            background: $botao-amarelo;
-            color: #04010f;
+            background: #2ab4ad;
+            color: white;
         }
 
         &:focus {
-            outline: 3px solid #ffd700;
+            outline: 3px solid #4dddd6;
             outline-offset: 3px;
         }
     
