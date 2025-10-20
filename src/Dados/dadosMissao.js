@@ -5,7 +5,8 @@ export const missoes = [
     missao: "Advinha quem eu sou",    
     descricao: "Pessoal, hoje vai ter prova",    
     respostaCorreta: "Dorival",
-    status: 'disponivel' 
+    status: 'disponivel',
+    figura: "/src/assets/dori.png"
   },
   {
     id: 2,
@@ -13,7 +14,8 @@ export const missoes = [
     missao: "Advinha quem eu sou",   
     descricao: "A bola é minha! Essa frase é conhecida por qual professor(a)?",
     respostaCorreta: "Marcia",
-    status: 'disponivel'
+    status: 'disponivel',
+    figura: "/src/assets/marcia.png"
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ export const missoes = [
     missao: "Advinha quem eu sou",   
     descricao: "O que é um projeto? Qual é o professor que relembra esse conceito todas vezes possíveis?",
     respostaCorreta: "Fernanda",
-    status: 'disponivel'
+    status: 'disponivel',
+    figura: "/src/assets/ferAvatar.png"
   },
   {
     id: 4,

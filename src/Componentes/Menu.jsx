@@ -15,6 +15,7 @@ export function Menu() {
                     </figure>
                 </li>
                 </Link>
+                <Link to= 'inventario'>
                 
                 <li>
                     <figure>
@@ -23,6 +24,7 @@ export function Menu() {
                     </figure>
                     
                 </li>
+                </Link>
                 <li>
                     <figure>
                         <img src={mapa} alt="GeoLocalização" />
