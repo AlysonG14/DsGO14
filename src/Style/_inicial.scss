@@ -24,12 +24,12 @@
 
         &:hover {
             transform: scale(1.05);
-            background: #2ab4ad;
+            background: #545DFF;
             color: white;
         }
 
         &:focus {
-            outline: 3px solid #4dddd6;
+            outline: 3px solid #545DFF;
             outline-offset: 3px;
             
         }
@@ -38,6 +38,13 @@
     
 
 }
+
+.logo {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 @media (max-width: 768px) {
     h1 {
       font-size: 2rem; // título menor em tablet

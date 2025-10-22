@@ -41,6 +41,7 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
         Digite sua resposta
       </label>
       <input
+        aria-describedby="digite-resposta"
         className="caixaTexto"
         id="resposta"
         type="text"
@@ -51,8 +52,8 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
       />
 
       <div className="modal-botoes">
-        <button onClick={verificarResposta}>Enviar</button>
-        <button onClick={onClose}>Fechar</button>
+        <button aria-label="Enviar" onClick={verificarResposta}>Enviar</button>
+        <button aria-label="Fechar" onClick={onClose}>Fechar</button>
       </div>
 
       {resultado && (

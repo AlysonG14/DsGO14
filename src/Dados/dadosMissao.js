@@ -3,7 +3,7 @@ export const missoes = [
     id: 1,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",    
-    descricao: "um professor que tem experiência de backend e ama ensinar para outras pessoas",    
+    descricao: "um professor que tem experiência de backend e ensina para outras pessoas",    
     respostaCorreta: "Dorival" || 'dorival',
     status: 'disponivel' 
   },
@@ -11,7 +11,7 @@ export const missoes = [
     id: 2,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",   
-    descricao: "ela foi muito amado para poucos, e ensinou muito bem sobre lógica de programação",
+    descricao: "os alunos amam essa professora, e ensinou muito bem sobre lógica de programação",
     respostaCorreta: "Marcia" || 'marcia',
     status: 'disponivel'
   },

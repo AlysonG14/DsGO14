@@ -1,10 +1,10 @@
-$fundo: #04010f;
+$fundo: #000000;
 $claro: #f0ebeb;
 $card:#dcdff2;
 $sombrasBox: 0 4px 10px rgba(0, 0, 0, 0.3);
-$destaque-azul: #4dddd6 transparent;
+$destaque-azul: #545DFF transparent;
 $destaque-azul-2: #349de2 transparent;
-$destaque-azul-normal: #4dddd6;
+$destaque-azul-normal: #545DFF;
 $gradiente-azul: linear-gradient(135deg, #349de2, #031120);
 $foco: #349de2;
 $botao-azul: linear-gradient(135deg, #349de2, #031120);
@@ -45,12 +45,12 @@ button {
   
         &:hover {
             transform: scale(1.05);
-            background: #2ab4ad;
+            background: #545DFF;
             color: white;
         }
 
         &:focus {
-            outline: 3px solid #4dddd6;
+            outline: 3px solid #545DFF;
             outline-offset: 3px;
             
         }
@@ -62,4 +62,9 @@ button[disabled],
   cursor: not-allowed;
   opacity: 0.8;
   background-color: #f3f1f2;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
 }
