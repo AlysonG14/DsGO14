@@ -3,40 +3,40 @@ export const missoes = [
     id: 1,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",    
-    descricao: "Pessoal, hoje vai ter prova",    
-    respostaCorreta: "Dorival",
+    descricao: "um professor que tem experiência de backend e ama ensinar para outras pessoas",    
+    respostaCorreta: "Dorival" || 'dorival',
     status: 'disponivel' 
   },
   {
     id: 2,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",   
-    descricao: "A bola é minha! Essa frase é conhecida por qual professor(a)?",
-    respostaCorreta: "Marcia",
+    descricao: "ela foi muito amado para poucos, e ensinou muito bem sobre lógica de programação",
+    respostaCorreta: "Marcia" || 'marcia',
     status: 'disponivel'
   },
   {
     id: 3,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",   
-    descricao: "O que é um projeto? Qual é o professor que relembra esse conceito todas vezes possíveis?",
-    respostaCorreta: "Fernanda",
+    descricao: "o que é stakeholder? do levantamento de requisitos",
+    respostaCorreta: "Fernanda" || 'fernanda',
     status: 'disponivel'
   },
   {
     id: 4,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",   
-    descricao: "Hellllowwwww Sextooouuuuuuuu, é a frase favorita de qual professor?",
-    respostaCorreta: "Mariany",
+    descricao: "uma professora que olhas todos os detalhes do ui/ux designer",
+    respostaCorreta: "Mariany" || 'mariany',
     status: 'disponivel'
   },
   {
     id: 5,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",   
-    descricao: "E agora com vocês .... os patronos do conhecimento... Vocês",
-    respostaCorreta: "Israel",
+    descricao: "E agora com vocês .... 'nome_da_pessoa' ",
+    respostaCorreta: "Israel" || 'israel',
     status: 'disponivel'
   }
   ,
@@ -44,16 +44,16 @@ export const missoes = [
     id: 6,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",   
-    descricao: "Tem contraste? tem placeholder?",
-    respostaCorreta: "Mariany",
+    descricao: "Tem contraste? tem placeholder? tem acessibilidade?",
+    respostaCorreta: "Mariany" || 'mariany',
     status: 'disponivel'
   },
   {
     id: 7,
     titulo: "Conhecimentos Gerais",
     missao: "O que eu sou?",   
-    descricao: "Toda tabela tem?",
-    respostaCorreta: "Chave Primaria",
+    descricao: "uma ferramenta que permite o usuário escrever o código aberto, pelo web framework é chamado de: ...",
+    respostaCorreta: "Django" || 'django',
     status: 'disponivel'
   }
   ,
@@ -61,8 +61,8 @@ export const missoes = [
     id: 8,
     titulo: "Conhecimentos Gerais",
     missao: "O que eu sou?",   
-    descricao: "Um codigo de excelecia tem .... code",
-    respostaCorreta: "Clean",
+    descricao: "uma biblioteca de javascript, permite criar a interface do usuário e componentes, chama-se: ...",
+    respostaCorreta: "React" || 'react',
     status: 'disponivel'
   }
 ];

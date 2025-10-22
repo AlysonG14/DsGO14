@@ -2,9 +2,11 @@ $fundo: #04010f;
 $claro: #f0ebeb;
 $card:#dcdff2;
 $sombrasBox: 0 4px 10px rgba(0, 0, 0, 0.3);
-$destaque-rosa: #ff3d7f transparent;
-$gradiente-rosa: linear-gradient(135deg, #2f1048, #e4018d);
-$foco: #4c0f32;
+$destaque-azul: #4dddd6 transparent;
+$destaque-azul-2: #349de2 transparent;
+$destaque-azul-normal: #4dddd6;
+$gradiente-azul: linear-gradient(135deg, #349de2, #031120);
+$foco: #349de2;
 $botao-azul: linear-gradient(135deg, #349de2, #031120);
 $botao-amarelo: linear-gradient(135deg, #b9820b, #ede203);
 $box-fundo: rgba(0, 0, 0, 0.8);
@@ -30,7 +32,7 @@ body {
 button {
   margin-top: 1rem;
   align-self: center;
-  background: $gradiente-rosa;
+  background: $gradiente-azul;
   color: $claro;
   border: none;
   padding: 0.7rem 1.4rem;
@@ -39,18 +41,20 @@ button {
   cursor: pointer;
   transition: transform 0.2s ease, background 0.2s ease;
   gap: 20px;
-}
 
-button:hover {
-  background: $gradiente-rosa;
-  transform: scale(1.05);
-  gap: 30px;
-}
+  
+        &:hover {
+            transform: scale(1.05);
+            background: #2ab4ad;
+            color: white;
+        }
 
-button:focus {
-  outline: 3px solid #4c0f32;
-  outline-offset: 3px;
-}
+        &:focus {
+            outline: 3px solid #4dddd6;
+            outline-offset: 3px;
+            
+        }
+      }
 
 button[disabled],
 .btn-disabled { 

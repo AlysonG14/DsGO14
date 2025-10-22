@@ -1,19 +1,18 @@
 .corpo {
-  background-image: url('../assets/earth.webp'); 
-  background-size: cover; 
+  background-image: url('../assets/atomic.jpg');
   background-repeat: no-repeat; 
   background-position: center; 
-  width: 10vw;
-  height: 10vh;
-  align-items: center;
-  position: relative;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  align-items: center;   
   overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: #ebe1e11a;
+    background: #0000001a;
     justify-content: center;
   }
 

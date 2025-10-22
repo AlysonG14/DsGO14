@@ -6,7 +6,7 @@
   backdrop-filter: blur(8px);
   padding: 3rem 2rem;
   border-radius: 20px;
-  color: #dfcaf9;
+  color: $foco;
   max-width: 1200px;
   margin: 2rem auto 7rem auto;
   overflow-y: auto;
@@ -15,13 +15,13 @@
 
   /* scroll estilizado */
   scrollbar-width: thin;
-  scrollbar-color:$destaque-rosa;
+  scrollbar-color:$destaque-azul-2;
   &::-webkit-scrollbar {
     width: 8px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $destaque-rosa;
+    background-color: $destaque-azul;
     border-radius: 10px;
   }
 
@@ -69,7 +69,8 @@
 
 /* TEXTO */
 .missao-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  box-shadow: 0 0.5px ;
 }
 
 .missao-card p {
