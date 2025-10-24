@@ -9,7 +9,7 @@ export function Menu() {
       <ul className="card_nav">
 
         <li>
-          <Link to="missao">
+          <Link to="/dsgo/missao/" role="menuitem" aria-label="acessar-missões">
             <figure>
               <img src={missao} alt="Missões" />
             </figure>
@@ -17,18 +17,21 @@ export function Menu() {
         </li>
 
         <li>
+          <Link to="/dsgo/inventario/" role="menuitem" aria-label="acessar-inventário"/>
           <figure>
             <img src={bau} alt="Inventário" />
           </figure>
         </li>
 
         <li>
+          <Link to="#" role="menuitem" aria-label="acessar-geolocalização"/>
           <figure>
             <img src={mapa} alt="GeoLocalização" />
           </figure>
         </li>
 
         <li>
+          <Link to="#" role="menuitem" aria-label="acessar-camera"/>
           <figure>
             <img src={camera} alt="camera" />
           </figure>

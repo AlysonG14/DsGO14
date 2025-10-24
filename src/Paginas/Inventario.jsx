@@ -37,7 +37,6 @@ export function Inventario() {
           {figurinhas.map((f) => (
             <div key={f.id} className="figurinha">
               <img src={f.imagem} alt={f.nome} />
-             
             </div>
           ))}
         </div>
