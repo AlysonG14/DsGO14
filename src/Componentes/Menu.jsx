@@ -7,7 +7,6 @@ export function Menu() {
   return (
     <div className="menu">
       <ul className="card_nav">
-
         <li>
           <Link to="/dsgo/missao/" role="menuitem" aria-label="acessar-missões">
             <figure>
@@ -17,26 +16,31 @@ export function Menu() {
         </li>
 
         <li>
-          <Link to="/dsgo/inventario/" role="menuitem" aria-label="acessar-inventário"/>
-          <figure>
-            <img src={bau} alt="Inventário" />
-          </figure>
+          <Link
+            to="/dsgo/inventario/"
+            role="menuitem"
+            aria-label="acessar-inventário"
+          >
+            <figure>
+              <img src={bau} alt="Inventário" />
+            </figure>
+          </Link>
         </li>
 
         <li>
-          <Link to="#" role="menuitem" aria-label="acessar-geolocalização"/>
+          <Link to="#" role="menuitem" aria-label="acessar-geolocalização" />
           <figure>
             <img src={mapa} alt="GeoLocalização" />
           </figure>
         </li>
 
         <li>
-          <Link to="#" role="menuitem" aria-label="acessar-camera"/>
-          <figure>
-            <img src={camera} alt="camera" />
-          </figure>
+          <Link to="/dsgo/camera/" role="menuitem" aria-label="acessar-camera">
+            <figure>
+              <img src={camera} alt="camera" />
+            </figure>
+          </Link>
         </li>
-
       </ul>
     </div>
   );
