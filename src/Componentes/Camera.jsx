@@ -5,6 +5,9 @@ export function Camera() {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const [foto, setFoto] = useState(null);
+  const [onFotoTirada, setOnFotoTirada] = useState(null)
+
+  const imagem = null
 
   useEffect(() => {
     iniciarCamera();
@@ -30,13 +33,27 @@ export function Camera() {
     canvas.height = video.videoHeight;
 
     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-    const imagem = canvas.toDataURL("image/png");
+    const imagem = canvas.toDataURL("src\assets\camera_imgs");
     setFoto(imagem);
 
-    if (onFotoTirada) {
-      onFotoTirada(imagem);
-    }
+    console.log(imagem)
+
+    const link = document.createElement('a')
+    link.download = 'camera.png' // função download para baixar a imagem 
+    link.href = imagem // pegar o elemento canvas
+    link.click() // permitir que o clique gera o download
+
+    // if (onFotoTirada) {
+      // onFotoTirada(imagem);
+    // }
   };
+
+  // const download = () => {
+    // const link = document.createElement('a')
+    // link.download = 'filename.png' // função download para baixar a imagem 
+    // link.href = document.getElementById('canvas').toDataURL('image/png') // pegar o elemento canvas
+    // link.click() // permitir que o clique gera o download
+  // }
 
   const reiniciar = () => {
     setFoto(null);
@@ -45,9 +62,9 @@ export function Camera() {
 
   return (
     <>
-      <section>
+      <section className="card_camera">
         <h2>Captura a imagem por Camera</h2>
-        <div>
+        <div className="camera">
             {!foto ?
             (<video ref={videoRef} autoPlay playsInline />):
             (<img src={foto} alt="Foto capturada"/>)}
