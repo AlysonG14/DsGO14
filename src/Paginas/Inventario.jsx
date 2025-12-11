@@ -12,7 +12,7 @@ export function Inventario() {
   const limparInventario = () => {
 
     if (figurinhas.length === 0) {
-      alert('Seu armário está limpo!')
+      alert('Seu inventário está limpo!')
     } else {
 
       // pede confirmação ao usuário

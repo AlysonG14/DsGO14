@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import L from "leaflet";
-import "../../node_modules/leaflet/dist/leaflet.css"
-
+import "leaflet/dist/leaflet.css"
+import "leaflet-routing-machine";
+import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
 
 export function GeolocalizacaoMapa() {
     const mapRef = useRef(null);
@@ -95,6 +96,7 @@ export function GeolocalizacaoMapa() {
                         step="any"
                         value={form.lat1}
                         onChange={(e) => setForm({ ...form, lat1: e.target.value })}
+                        className="form-input"
                     />
 
                     {errors.lat1 && <p className="error-message">{errors.lat1}</p>}
