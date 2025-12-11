@@ -28,10 +28,11 @@ export function Menu() {
         </li>
 
         <li>
-          <Link to="#" role="menuitem" aria-label="acessar-geolocalização" />
-          <figure>
-            <img src={mapa} alt="GeoLocalização" />
-          </figure>
+          <Link to="/dsgo/geolocalizacao/" role="menuitem" aria-label="acessar-geolocalização">
+            <figure>
+              <img src={mapa} alt="GeoLocalização" />
+            </figure>
+          </Link>
         </li>
 
         <li>
